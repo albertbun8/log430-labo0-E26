@@ -12,4 +12,5 @@ def test_app():
     assert "== Calculatrice v1.0 ==" in welcome_message
 
 def test_addition():
-    assert addition(2, 3) == 5
+    my_calculator = Calculator()
+    assert my_calculator.addition(2, 3) == 5
