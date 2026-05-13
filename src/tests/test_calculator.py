@@ -14,3 +14,19 @@ def test_app():
 def test_addition():
     my_calculator = Calculator()
     assert my_calculator.addition(2, 3) == 5
+
+def test_substraction():
+    my_calculator = Calculator()
+    assert my_calculator.subtraction(5, 3) == 2
+
+def test_multiplication():
+    my_calculator = Calculator()
+    assert my_calculator.multiplication(5, 3) == 15
+
+def test_division():
+    my_calculator = Calculator()
+    assert my_calculator.division(10, 2) == 5
+
+def test_division_par_zero():
+    my_calculator = Calculator()
+    assert my_calculator.division(2, 0) == "Erreur : division par zéro"
